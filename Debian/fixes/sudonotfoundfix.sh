@@ -23,4 +23,14 @@ adduser cerebros sudo
 
 #chmod  0440  /etc/sudoers
 
+####################################
+#Different method to add user to sudo group
+#su -
+#usermod -aG sudo cerebros
+
+####################################
+#If all else fail, just install sudo
+#su -
+#apt install sudo
+
 #exit
