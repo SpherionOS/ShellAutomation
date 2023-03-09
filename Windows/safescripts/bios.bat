@@ -1,1 +1,1 @@
-shutdow /r /fw /f /t
+shutdown /r /fw /f /t
