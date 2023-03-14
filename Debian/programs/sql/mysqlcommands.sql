@@ -24,6 +24,9 @@ update [tb_name] set [identifier] = [newdata] where [condition];
 #Alter table
 alter table [tb_name] [column1] = int|varchar(255)|date;
 
+#Add column
+alter table [tb_name] add [coloumn_name] int|varchar(255)|date after [other_column_name]
+
 #Delete rows
 delete from [tb_name] where [identifier] = [data];
 
