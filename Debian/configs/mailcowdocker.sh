@@ -10,9 +10,6 @@ cd mailcow-dockerized
 
 ./generate_config.sh
 
-Mail server hostname (FQDN) - this is not your mail domain, but your mail servers hostname: mail.ubuntu.com
-
-Timezone [Etc/UTC]: AU
 
 exit
 
