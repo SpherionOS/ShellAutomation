@@ -1,8 +1,9 @@
+$boottime = Get-CimInstance -ClassName win32_operatingsystem | select lastbootuptime
 $systype = systeminfo | findstr "System"
 $dns = ipconfig /all | findstr "DNS"
 $mem = systeminfo | findstr "Memory"
 
-$content = $systype + $mem + $dns + $ip
+$content = $boottime + $systype + $mem + $dns + $ip
 $content | out-file -filepath ~/Downloads/ImportantInfo.txt
 
 clear
