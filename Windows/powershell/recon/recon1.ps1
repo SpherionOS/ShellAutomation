@@ -1,4 +1,3 @@
-$boottime = Get-CimInstance -ClassName win32_operatingsystem | select lastbootuptime
 $systype = systeminfo | findstr "System"
 $dns = ipconfig /all | findstr "DNS"
 $mem = systeminfo | findstr "Memory"
