@@ -11,10 +11,11 @@ $Credential = New-Object -TypeName System.Management.Automation.PSCredential -Ar
 
 $inputAnswer = read-host -prompt "Store as a .txt file [y] or [n]"
 
+#proxy removed for privacy, add a proxy in [proxy] to continue
 
 if($inputProxy -eq "y")
 {
-$content = curl $uri -proxy http://proxy2.eq.edu.au -proxycredential $Credential
+$content = curl $uri -proxy [proxy] -proxycredential $Credential
 }
 
 if($inputProxy -eq "n")
